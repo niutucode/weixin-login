@@ -1,0 +1,58 @@
+.header {
+  font-size: 50rpx;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
+}
+
+.tip {
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  color: #515151;
+}
+
+.input {
+  margin-left: 40rpx;
+  width: calc(100% - 80rpx);
+  margin-top: 40rpx;
+}
+
+.account-input {
+  border-bottom: #919191 solid 2rpx;
+  height: 80rpx;
+}
+
+.checkbox {
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.checkbox checkbox {
+  transform: scale(0.7, 0.7);
+}
+
+.normal {
+  font-size: 24rpx;
+}
+
+.highlight {
+  font-size: 24rpx;
+  color: cornflowerblue;
+}
+
+.button-view {
+  margin-top: 100rpx;
+  margin-left: 40rpx;
+  width: calc(100% - 80rpx);
+}
+
+.footer {
+  position: absolute;
+  bottom: 40rpx;
+  text-align: center;
+  width: 100%;
+  font-size: 28rpx;
+  color: gray;
+}
+

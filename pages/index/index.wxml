@@ -1,0 +1,29 @@
+<view class="container-view">
+  <view class="header">
+    <text>登录/注册</text>
+  </view>
+  <view class="tip">
+    <text>请输入账号</text>
+  </view>
+  <view class="input">
+    <!-- model:value用于双向绑定，组件中的值发生变化，js中的值也会变化，js中的值发生变化，组件中的值也会变化 -->
+    <input type="text" class="account-input" placeholder="请输入账号" model:value="{{account}}" bindinput="accountInput"/>
+  </view>
+  <view class="input">
+    <!-- bindinput键盘输入时，触发的回调 -->
+    <input type="password" class="account-input" placeholder="请输入密码" model:value="{{password}}" bindinput="passwordInput"/>
+  </view>
+  <view class="checkbox">
+    <checkbox model:checked="{{checked}}"/>
+    <text class="normal">登录/注册即表示同意</text>
+    <text class="highlight" bindtap="nav1">《隐私协议》</text>
+    <text class="normal">与</text>
+    <text class="highlight" bindtap="nav2">《服务协议》</text>
+  </view>
+  <view class="button-view">
+    <button type="primary" style="width: 100%;" disabled="{{account.length == 0 || password.length == 0 || !checked}}" bindtap="confirm">确认</button>
+  </view>
+  <view class="footer">
+    <text>微信小程序登录注册</text>
+  </view>
+</view>
